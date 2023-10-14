@@ -1,0 +1,205 @@
+:root{
+    --bg-page: #2b2b2b;
+    --bg-navbar: #181717;
+    --font-color: white;
+    --purple-color: #a05eec;
+    --details: #F0E3FF;
+}
+
+.light{
+    --bg-navbar: #F0E3FF;
+    --font-color:
+}
+
+*{
+    color: var(--font-color);
+}
+
+body{
+    background-color: var(--bg-page);
+    background-image: url(./assets/bg.png);
+    background-position: 0% 40%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: var(--bg-navbar);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0.5rem 2.5rem;
+    box-shadow: 5px 5px 5px rgb(57, 57, 57);
+}
+
+.toggler-icon {
+    color: var(--font-color);
+    font-size: 30px;
+}
+
+.navbar-itens{
+    justify-content: end;
+}
+
+.navbar-logo img{
+    width: 4rem;
+}
+
+.navbar-itens .nav-link{
+    color: var(--font-color);
+    font-size: 18px;
+}
+
+.logo-apresentacao{
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple-color);
+    gap: 1rem;
+}
+
+.logo-apresentacao img{
+    width: 8rem;
+}
+
+.logo-apresentacao h1{
+    font-size: 36px;
+}
+
+.descricao {
+    display: flex;
+    color: var(--font-color);
+    margin-left: 15rem;
+}
+
+.descricao img{
+    width: 35rem;
+}
+
+.descricao p{
+    width: 25rem;
+    font-size: 22px;
+    position: absolute;
+    top: 1;
+    left: 46%;
+    bottom: 30%;
+}
+
+.btn-contato{
+    position: fixed;
+    right: 4.5rem;
+    bottom: 3rem;
+}
+
+.btn-contato .btn{
+    background-color: var(--details);
+    border-radius: 99px;
+    width: 3.5rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-contato .btn img{
+    width: 1.5rem;
+}
+
+.foto-descricao{
+    margin-top: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.foto-descricao p{
+    width: 30rem;
+    font-size: 18px;
+    
+}
+
+.foto-descricao p span{
+    font-size: 30px;
+    color: var(--purple-color);
+}
+
+.frase-efeito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frase-efeito img{
+    width: 100%;
+}
+
+.frase-efeito p{
+    font-size: 18px;
+    width: 50rem;
+    margin-top: 3rem;
+}
+
+.frase-efeito p span{
+    font-size: 28px;
+    color: var(--purple-color);
+}
+
+.frase-efeito .autora{
+    font-size: 22px;
+    width: 50rem;
+    margin-top: -2rem;
+    color: var(--purple-color);
+    text-align: end;
+}
+
+h2{
+    font-size: 28px;
+    color: var(--purple-color);
+    margin: 3rem 0 3rem 18rem;
+}
+
+.formacao-academica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 18rem;
+    gap: 1.5rem;
+}
+
+.cards{
+    width: 60rem;
+    margin-bottom: 3rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    color: var(--font-color);
+    background-color: var(--bg-navbar);
+    border-radius: 30px;
+    box-shadow: 0.5px 0.5px 10px hsla(0, 0%, 100%, 0.279);
+    align-items: center;
+    height: 18rem;
+}
+
+.card img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.card h5{
+    font-size: 18px;
+}
+
+.formacao-complementar{
+    margin-left: 18rem;
+}
+
+.card-body{
+    margin: 1rem;
+    width: 60rem;
+}
