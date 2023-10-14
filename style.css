@@ -17,7 +17,7 @@
 
 body{
     background-color: var(--bg-page);
-    background-image: url(./assets/bg.png);
+    /*background-image: url(./assets/bg.png);*/
     background-position: 0% 40%;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -25,6 +25,7 @@ body{
 
 .navbar{
     position: fixed;
+    z-index: 10;
     width: 100vw;
     top: 0;
     background-color: var(--bg-navbar);
@@ -52,20 +53,21 @@ body{
     font-size: 18px;
 }
 
-.logo-apresentacao{
-    margin-top: 5.5rem;
+.apresentacao{
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--purple-color);
     gap: 1rem;
 }
 
-.logo-apresentacao img{
+.apresentacao img{
     width: 8rem;
+    
 }
 
-.logo-apresentacao h1{
+.apresentacao h1{
+    color: var(--purple-color);
     font-size: 36px;
 }
 
@@ -92,6 +94,7 @@ body{
     position: fixed;
     right: 4.5rem;
     bottom: 3rem;
+    z-index: 10;
 }
 
 .btn-contato .btn{
@@ -107,12 +110,19 @@ body{
     width: 1.5rem;
 }
 
+
+
 .foto-descricao{
     margin-top: 5.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
+}
+
+.foto-descricao .foto{
+    display: flex;
+    justify-content: end;
 }
 
 .foto-descricao p{
@@ -155,51 +165,183 @@ body{
     text-align: end;
 }
 
-h2{
-    font-size: 28px;
-    color: var(--purple-color);
-    margin: 3rem 0 3rem 18rem;
+.curriculo, .meus-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.formacao-academica{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 18rem;
-    gap: 1.5rem;
+h2{
+    width: 60rem;
+    font-size: 28px;
+    color: var(--purple-color);
+    margin: 4rem 0 3rem 0;
+    text-align: start;
 }
 
 .cards{
     width: 60rem;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem 0;
+    gap: 1rem;
 }
 
 .card{
-    display: flex;
-    flex-direction: row;
-    padding: 0 2rem;
-    color: var(--font-color);
-    background-color: var(--bg-navbar);
-    border-radius: 30px;
-    box-shadow: 0.5px 0.5px 10px hsla(0, 0%, 100%, 0.279);
+    background-color: #181717;
+    padding: 1rem;
     align-items: center;
-    height: 18rem;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.342);
 }
 
-.card img{
-    width: 10rem;
-    height: 10rem;
+.card .imagem{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.card h5{
-    font-size: 18px;
+.imagem img{
+    width: 8rem;
+}
+
+.title{
+    font-weight: 600;
 }
 
 .formacao-complementar{
-    margin-left: 18rem;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60rem;
+    margin: 0 0 2rem 0;
 }
 
-.card-body{
-    margin: 1rem;
-    width: 60rem;
+.formacao-complementar img{
+    width: 8rem;
+}
+
+.carousel{
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.hard-skills{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+
+.minha-hard-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.hard-skill{
+    width: 10rem;
+    height: 10rem;
+    background-color: #E0C5FF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25) inset;
+    padding-top: 1rem;
+}
+
+.hard-skill p{
+    color: var(--bg-navbar);
+}
+
+.hard-skill img{
+    width: 4rem;
+}
+
+.carousel-control-prev {
+    margin-right: 16rem;
+}
+
+.carousel-control-next{
+    margin-left: 16rem;
+}
+
+.carousel-control-prev img, .carousel-control-next img{
+    width: 6rem;
+}
+
+.soft-skills, .projetos{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+
+.minha-soft-skill, .meu-projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.soft-skill{
+    width: 30rem;
+}
+
+.soft-skill, .projeto{
+    background-color: var(--bg-navbar);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.soft-descricao, .projeto-descricao{
+    width: 20rem;
+}
+
+.soft-skill img{
+    width: 6rem;
+}
+
+.project {
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }

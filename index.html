@@ -37,15 +37,29 @@
     </div>
   </nav>
   <section class="home-page">
-    <div class="logo-apresentacao">
-      <img src="./assets/logo_amandadev.png" alt="">
-      <h1>Amanda Fernandes, <br> Desenvolvedora FullStack.</h1>
+    
+    <div class="row">
+      <div class="col apresentacao">
+        <img class="logo-apresentacao" src="./assets/logo_amandadev.png" alt="...">
+        <h1 class="mt-1 nome-apresentacao">Amanda Fernandes, <br> Desenvolvedora FullStack.</h1>
+      </div>
     </div>
 
-    <div class="descricao">
-      <img src="./assets/computer.png" alt="">
-      <p>Desenvolvendo soluções a cada linha de código e construindo um futuro melhor a cada passo!</p>
+    <div class="row">
+      <div class="col descricao">
+        <img src="./assets/computer.png" alt="...">
+        <p>Desenvolvendo soluções a cada linha de código e construindo um futuro melhor a cada passo!</p>
+      </div>
     </div>
+
+    <div class="row g-0 position-relative descricao">
+      <div class="col-md-6 mb-md-0 p-md-4">
+        
+      </div>
+      <div class="col-md-6 p-4 ps-md-0">
+        
+      </div>
+    </div>    
 
     <div class="d-grid gap-3 d-md-flex btn-contato">
       <button class="btn" type="button"><img src="./assets/logo-linkedin.png" alt=""></button>
@@ -55,13 +69,14 @@
   </section>
 
   <section class="quem-sou">
-    <div class="foto-descricao">
-      <img src="./assets/foto-perfil.png" alt="">
-      <p><span>Olá, mundo!<br></span>Sou a Amanda, uma mulher apaixonada por tecnologia e entusiasta de UX e UI Design. Acredito que através da tecnologia podemos tornar o mundo um lugar melhor!
-        Um dos meus sonhos é poder fazer a diferença para a sociedade através do meu trabalho e utilizo como inspiração todas as mulheres da área de TI que me representam!</p>
+
+    <div class="row foto-descricao">
+      <div class="col foto"><img src="./assets/foto-perfil.png" alt=""></div>
+      <div class="col"><p><span>Olá, mundo!<br></span>Sou a Amanda, uma mulher apaixonada por tecnologia e entusiasta de UX e UI Design. Acredito que através da tecnologia podemos tornar o mundo um lugar melhor!
+        Um dos meus sonhos é poder fazer a diferença para a sociedade através do meu trabalho e utilizo como inspiração todas as mulheres da área de TI que me representam!</p></div>
     </div>
 
-    <div class="frase-efeito">
+    <div class="row frase-efeito">
       <img src="./assets/enfeite.png" alt="">
       <p><span>"</span>Nunca estou realmente satisfeita quanto a entender alguma coisa, porque, até onde entendo, 
         a minha compreensão só pode ser uma fração infinitesimal de tudo o que eu quero compreender.<span>"</span></p>
@@ -70,42 +85,234 @@
   </section>
 
   <section class="curriculo">
+
     <h2>Formação Acadêmica</h2>
 
-    <div class="formacao-academica">
-        <div class="card">
-          <img src="./assets/computador-figura.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Técnico em Informática para Internet: Desenvolvimento de Software</h5>
-            <p class="card-text">2023 - Em andamento. <br>
+    <div class="row cards">
+      <div class="col card">
+        <div class="row">
+          <div class="col-4 imagem">
+            <img src="./assets/computador-figura.png" alt="">
+          </div>
+          <div class="col-8">
+            <p class="title">Técnico em Informática para Internet: Desenvolvimento de Software</p>
+            <p>2023 - Em andamento. <br>
               Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
           </div>
         </div>
+      </div>
 
-      
-        <div class="card">
-          <img src="./assets/quimica-figura.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Técnico em Química</h5>
-            <p class="card-text">2017 - 2020. <br>
+      <div class="col card">
+        <div class="row">
+          <div class="col-5 imagem">
+            <img src="./assets/quimica-figura.png" alt="">
+          </div>
+          <div class="col-6">
+            <p class="title">Técnico em Química</p>
+            <p>2017 - 2020. <br>
               Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
           </div>
         </div>
-  </div>
-
-  <h2>Formação Complementar</h2>
-
-  <div class="card-complementar">
-    <img src="./assets/computador-figura.png" alt="">
-    <div class="card-body">
-      <h5 class="card-title">Técnico em Informática para Internet: Desenvolvimento de Software</h5>
-      <p class="card-text">2023 - Em andamento. <br>
-        Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
+      </div>
     </div>
-  </div>
+
+    <h2>Formação Complementar</h2>
+
+    <div class="row">
+      <div class="col">
+        <div class="row formacao-complementar">
+          <img src="./assets/computador-figura-pequeno.png" alt="">
+          <div class="informacoes">
+            <p class="title">Desenvolvedora Backend</p>
+            <p>2023 - Em andamento. <br>
+              Estudo backend de forma autodidata e através dos cursos de plataformas de ensino.</p>
+          </div>
+        </div>
+
+        <div class="row formacao-complementar">
+          <img src="./assets/design.png" alt="">
+          <div class="informacoes">
+            <p class="title">UX/UI Designer</p>
+            <p>2023 - Em andamento. <br>
+              Programa Geração Caldeira através do Instituto Caldeira.</p>
+          </div>
+        </div>
+
+        <div class="row formacao-complementar">
+          <img src="./assets/cloud.png" alt="">
+          <div class="informacoes">
+            <p class="title">AWS Solutions Architect</p>
+            <p>2023 - Em andamento. <br>
+              Ciclo de treinamendo AWS através do Instituto Caldeira e Certificações.</p>
+          </div>
+        </div>
+
+        <h2>Minhas Hard Skills</h2>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <div class="row hard-skills">
+                
+                <div class="col-lg-3 col-md-4 col-sm-12 minha-hard-skill">
+                  <div class="hard-skill">
+                    <img src="./assets/java.png" alt="">
+                    <p>Java</p>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-12 minha-hard-skill">
+                  <div class="hard-skill">
+                    <img src="./assets/javascript.png" alt="">
+                    <p>JavaScript</p>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-12 minha-hard-skill">
+                  <div class="hard-skill">
+                    <img src="./assets/html.png" alt="">
+                    <p>HTML</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row hard-skills">
+                
+                <div class="col-3 minha-hard-skill">
+                  <div class="hard-skill">
+                    <img src="./assets/documento-css.png" alt="">
+                    <p>CSS</p>
+                  </div>
+                </div>
+                
+                <div class="col-3 minha-hard-skill">
+                  <div class="hard-skill">
+                    <img src="./assets/interface-do-usuario.png" alt="">
+                    <p>UX/UI Design</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <img src="./assets/previous.png" alt="">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <img src="./assets/next.png" alt="">
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h2>Meus Diferenciais e Soft Skills</h2>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+             
+              <div class="row soft-skills">
+                <div class="col minha-soft-skill">
+                  <div class="soft-skill">
+                    <img src="./assets/abra-o-livro.png" alt="">
+                    <div class="soft-descricao">
+                      <p class="title">Aprendizado Autodidata</p>
+                      <p>Sou uma pessoa autodidata, apaixonada pelo conhecimento, estou sempre em busca de aprofundamento e novos aprendizados.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              
+              <div class="row soft-skills">
+                <div class="col minha-soft-skill">
+                  <div class="soft-skill">
+                    <img src="./assets/analise.png" alt="">
+                    <div class="soft-descricao">
+                      <p class="title">Atenção aos Detalhes</p>
+                      <p>Gosto de pensar que em um projeto, os detalhes são extremamente importantes! Eu sou uma pessoa que está sempre atenta em cada detalhe.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="carousel-item">
+              
+              <div class="row soft-skills">
+                <div class="col minha-soft-skill">
+                  <div class="soft-skill">
+                    <img src="./assets/lampada-de-ideia .png" alt="">
+                    <div class="soft-descricao">
+                      <p class="title">Resolução de Problemas</p>
+                      <p>Sou uma pessoa que analisa os problemas de diferentes ângulos e é capaz de encontrar soluções criativas e inovadoras.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              
+              <div class="row soft-skills">
+                <div class="col minha-soft-skill">
+                  <div class="soft-skill">
+                    <img src="./assets/foguete.png" alt="">
+                    <div class="soft-descricao">
+                      <p class="title">Empreendedorismo</p>
+                      <p>Possuo mentalidade empreendedora e proativa, busco colocar o usuário como prioridade em cada desenvolvimento.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <img src="./assets/previous.png" alt="">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <img src="./assets/next.png" alt="">
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
 
   </section>
 
+  <section class="meus-projetos">
+
+    <h2>Meus Projetos</h2>
+
+    <div class="project">
+      <h4>Decodificador de Textos</h4>
+      <img src="./assets/projeto-decodificador.png" alt="Projeto decodificador de textos">
+      <p>Descrição curta do Projeto 1.</p>
+      <a href="deploy_projeto1.html" target="_blank" class="button">Ver Deploy</a>
+      <a href="repositorio_projeto1.html" target="_blank" class="button">Ver Repositório</a>
+  </div>
+  
+  <div class="project">
+      <hh>Projeto 2</hh>
+      <img src="projeto2.jpg" alt="Projeto 2">
+      <p>Descrição curta do Projeto 2.</p>
+      <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
+      <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
+  </div>
+  </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
