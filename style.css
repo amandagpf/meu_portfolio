@@ -2,8 +2,9 @@
     --bg-page: #2b2b2b;
     --bg-navbar: #181717;
     --font-color: white;
-    --purple-color: #a05eec;
+    --purple-color: rgb(255, 107, 194);
     --details: #F0E3FF;
+    --colorful-shadow: #ff6bc13a;
 }
 
 .light{
@@ -53,48 +54,44 @@ body{
     font-size: 18px;
 }
 
-.apresentacao{
-    margin-top: 6rem;
+.home-page, .curriculo, .meus-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page{
+    height: 100vh;
+}
+
+.descricao{
+    margin-top: 6.5rem;
+    color: var(--purple-color);
+    flex-wrap: wrap-reverse;
+}
+
+.descricao, .quem-sou-descricao{ 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-}
-
-.apresentacao img{
-    width: 8rem;
-    
-}
-
-.apresentacao h1{
-    color: var(--purple-color);
-    font-size: 36px;
-}
-
-.descricao {
-    display: flex;
-    color: var(--font-color);
-    margin-left: 15rem;
+    gap: 2%;
 }
 
 .descricao img{
-    width: 35rem;
+    max-width: 50%;
+    margin-left: 8%;
+    min-width: 20rem;
 }
 
-.descricao p{
-    width: 25rem;
-    font-size: 22px;
-    position: absolute;
-    top: 1;
-    left: 46%;
-    bottom: 30%;
+.descricao h1{
+    margin-bottom: 8%;
 }
 
 .btn-contato{
-    position: fixed;
-    right: 4.5rem;
-    bottom: 3rem;
-    z-index: 10;
+    position: absolute;
+    right: 4%;
+    bottom: 26%;
 }
 
 .btn-contato .btn{
@@ -110,28 +107,22 @@ body{
     width: 1.5rem;
 }
 
-
-
-.foto-descricao{
-    margin-top: 5.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+.quem-sou-descricao{
+    flex-wrap: wrap;
+    margin: 4% 8% 0;
 }
 
-.foto-descricao .foto{
-    display: flex;
-    justify-content: end;
+.quem-sou-descricao img{
+    width: 35%;
 }
 
-.foto-descricao p{
+.quem-sou-descricao p{
     width: 30rem;
     font-size: 18px;
     
 }
 
-.foto-descricao p span{
+.quem-sou-descricao p span{
     font-size: 30px;
     color: var(--purple-color);
 }
@@ -140,49 +131,50 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    
 }
 
-.frase-efeito img{
-    width: 100%;
+.enfeite img{
+    width: 120%;
 }
 
 .frase-efeito p{
     font-size: 18px;
-    width: 50rem;
-    margin-top: 3rem;
+    width: 60%;
 }
 
 .frase-efeito p span{
-    font-size: 28px;
+    font-size: 18px;
+    font-weight: 800;
     color: var(--purple-color);
 }
 
 .frase-efeito .autora{
-    font-size: 22px;
-    width: 50rem;
+    font-size: 20px;
+    width: 60%;
     margin-top: -2rem;
     color: var(--purple-color);
     text-align: end;
 }
 
-.curriculo, .meus-projetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 h2{
-    width: 60rem;
-    font-size: 28px;
+    width: 76%;
+    font-size: 24px;
     color: var(--purple-color);
-    margin: 4rem 0 3rem 0;
     text-align: start;
+    margin: 4rem 0;
 }
 
 .cards{
-    width: 60rem;
-    margin: 0 0 3rem 0;
+    width: 100%;
+    margin: 0 30% 0;
     gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -191,7 +183,9 @@ h2{
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.342);
+    box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
+    max-width: 35%;
+    min-width: 22rem;
 }
 
 .card .imagem{
@@ -208,65 +202,75 @@ h2{
     font-weight: 600;
 }
 
+.cards-invisiveis{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
 .formacao-complementar{
     display: flex;
     flex-wrap: nowrap;
-    width: 60rem;
-    margin: 0 0 2rem 0;
+    width: 100%;
+    max-width: 20rem;
+    gap: 1rem;
+
 }
 
-.formacao-complementar img{
-    width: 8rem;
+.formacao-complementar p{
+    width: 100%;
 }
 
-.carousel{
-    position: relative;
-    margin-bottom: 3rem;
+.formacao-complementar .imagem{
+    min-width: 6rem;
+}
+
+.imagem img{
+    width: 100%;
 }
 
 .hard-skills{
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 1.5rem;
-}
-
-.minha-hard-skill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 1rem;
+    gap: 2rem;
 }
 
 .hard-skill{
     width: 10rem;
     height: 10rem;
-    background-color: #E0C5FF;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 5px 5px 10px 5px rgba(247, 152, 207, 0.256) inset;
     padding-top: 1rem;
 }
 
 .hard-skill p{
-    color: var(--bg-navbar);
+    color: white;
 }
 
 .hard-skill img{
     width: 4rem;
 }
 
+.carousel{
+    width: 100%;
+}
+
 .carousel-control-prev {
-    margin-right: 16rem;
+    margin-left: 16%;
 }
 
 .carousel-control-next{
-    margin-left: 16rem;
+    margin-right: 16%;
 }
 
 .carousel-control-prev img, .carousel-control-next img{
@@ -289,12 +293,15 @@ h2{
 }
 
 .soft-skill{
-    width: 30rem;
+    width: 40%;
+    min-width: 16rem;
 }
 
-.soft-skill, .projeto{
-    background-color: var(--bg-navbar);
+.soft-skill{
     border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
+    border: 1px solid var(--colorful-shadow);
+    background-color: #272626;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +309,7 @@ h2{
     padding: 1rem;
 }
 
-.soft-descricao, .projeto-descricao{
+.soft-descricao{
     width: 20rem;
 }
 
@@ -311,15 +318,17 @@ h2{
 }
 
 .project {
-    max-width: 400px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+    max-width: 60rem;
+    margin: 0 8% 6%;
+    padding: 2%;
+    background-color: #181717;
+    border-radius: 30px;
     text-align: center;
+    box-shadow: 1px 1px 10px 1px var(--colorful-shadow);
 }
 
 .project img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -328,20 +337,96 @@ h2{
 }
 
 .project p {
-    margin-bottom: 10px;
+    margin: 0 5% 2.5%;
+}
+
+.project {
+    display: none;
 }
 
 .button {
     display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 0.5rem;
+    padding: 0.5rem 0;
+    width: 30%;
+    min-width: 10rem;
     text-decoration: none;
     color: #fff;
-    background-color: #007bff;
-    border-radius: 5px;
+    font-weight: 600;
+    background-color: #C32F86;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color:var(--purple-color);
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #C32F86;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.098);
+    border: none;
+}
+
+.filter-button:hover{
+    background-color: var(--purple-color);
+}
+
+.filter-button.active {
+    background-color: var(--sua-cor-aqui); /* Adicione a sua cor aqui */
+}
+
+.filter-indicator {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-indicator-container {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+
+
+@media (max-width: 576px) {
+    .hard-skill{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .hard-skill p{
+        font-size: 12px;
+    }
+    
+    .hard-skill img{
+        width: 3rem;
+    }
+
+    .carousel-control-prev {
+        margin-left: -1%;
+    }
+    
+    .carousel-control-next{
+        margin-right: -1%;
+    }
+
+    .soft-descricao{
+        font-size: 14px;
+    }
+
+    .soft-skill{
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
