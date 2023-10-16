@@ -1,27 +1,41 @@
 :root{
-    --bg-page: #2b2b2b;
+    --bg-page: #272626;
     --bg-navbar: #181717;
-    --font-color: white;
-    --purple-color: rgb(255, 107, 194);
+    --font-color: #F0E3FF;
+    --pink-color: rgb(255, 107, 194);
     --details: #F0E3FF;
     --colorful-shadow: #ff6bc13a;
+    --btn-color: #C32F86;
+    --inset-shadow: #f798cf41;
+    --black-shadow: rgba(255, 255, 255, 0.098);
+    --switch-span-shadow: #ffffff3f;
+    --switch-span: black;
+    --navbar-shadow: rgb(57, 57, 57);
 }
 
 .light{
-    --bg-navbar: #F0E3FF;
-    --font-color:
+    --bg-page: #e8d9d9;
+    --bg-navbar: #e4bfcb;
+    --font-color: #181717;
+    --pink-color: #C32F86;
+    --details: #181717;
+    --colorful-shadow: #c32f8586;
+    --btn-color: rgb(255, 107, 194);
+    --inset-shadow: #c32f8586;
+    --black-shadow: #c32f8586;
+    --switch-span-shadow: rgba(0, 0, 0, 0.274);
+    --switch-span: #e8d9d9;
+    --navbar-shadow: rgba(57, 57, 57, 0.4);
 }
 
 *{
     color: var(--font-color);
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
     background-color: var(--bg-page);
-    /*background-image: url(./assets/bg.png);*/
-    background-position: 0% 40%;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .navbar{
@@ -33,7 +47,54 @@ body{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 0.5rem 2.5rem;
-    box-shadow: 5px 5px 5px rgb(57, 57, 57);
+    box-shadow: 5px 5px 5px var(--navbar-shadow);
+}
+
+#switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 1.5rem;
+    margin-left: 1rem;
+    position: relative;
+}
+  
+.btn-switch{
+    width: 32px;
+    height: 32px;
+    background: var(--details);
+    box-shadow: 1px 1px 5px 1px var(--switch-span-shadow);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-switch ion-icon{
+    color: var(--bg-navbar);
+    font-size: 5rem;
+}
+  
+.dark .btn-switch{
+    transform: translate(-110%, -50%);
+    
+}
+  
+#switch span {
+    display: block;
+    width: 64px;
+    height: 1.5rem;
+    background: var(--switch-span);
+    border-radius: 9999px;
+    box-shadow: 1.5px 1.5px 10px 1.5px var(--switch-span-shadow) inset;
 }
 
 .toggler-icon {
@@ -67,7 +128,7 @@ body{
 
 .descricao{
     margin-top: 6.5rem;
-    color: var(--purple-color);
+    color: var(--pink-color);
     flex-wrap: wrap-reverse;
 }
 
@@ -104,7 +165,7 @@ body{
 }
 
 .btn-contato .btn img{
-    width: 1.5rem;
+    width: 100%;
 }
 
 .quem-sou-descricao{
@@ -124,7 +185,7 @@ body{
 
 .quem-sou-descricao p span{
     font-size: 30px;
-    color: var(--purple-color);
+    color: var(--pink-color);
 }
 
 .frase-efeito{
@@ -137,7 +198,7 @@ body{
 }
 
 .enfeite img{
-    width: 120%;
+    width: 100%;
 }
 
 .frase-efeito p{
@@ -148,21 +209,21 @@ body{
 .frase-efeito p span{
     font-size: 18px;
     font-weight: 800;
-    color: var(--purple-color);
+    color: var(--pink-color);
 }
 
 .frase-efeito .autora{
     font-size: 20px;
     width: 60%;
     margin-top: -2rem;
-    color: var(--purple-color);
+    color: var(--pink-color);
     text-align: end;
 }
 
 h2{
     width: 76%;
     font-size: 24px;
-    color: var(--purple-color);
+    color: var(--pink-color);
     text-align: start;
     margin: 4rem 0;
 }
@@ -178,7 +239,7 @@ h2{
 }
 
 .card{
-    background-color: #181717;
+    background-color: var(--bg-navbar);
     padding: 1rem;
     align-items: center;
     justify-content: center;
@@ -186,6 +247,7 @@ h2{
     box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     max-width: 35%;
     min-width: 22rem;
+    min-height: 13.5rem;
 }
 
 .card .imagem{
@@ -194,8 +256,10 @@ h2{
     align-items: center;
 }
 
-.imagem img{
-    width: 8rem;
+.card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title{
@@ -249,12 +313,12 @@ h2{
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 5px 5px 10px 5px rgba(247, 152, 207, 0.256) inset;
+    box-shadow: 5px 5px 10px 5px var(--inset-shadow) inset;
     padding-top: 1rem;
 }
 
 .hard-skill p{
-    color: white;
+    color: var(--font-color);
 }
 
 .hard-skill img{
@@ -301,7 +365,7 @@ h2{
     border-radius: 30px;
     box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     border: 1px solid var(--colorful-shadow);
-    background-color: #272626;
+    background-color: var(--bg-page);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,7 +385,7 @@ h2{
     max-width: 60rem;
     margin: 0 8% 6%;
     padding: 2%;
-    background-color: #181717;
+    background-color: var(--bg-navbar);
     border-radius: 30px;
     text-align: center;
     box-shadow: 1px 1px 10px 1px var(--colorful-shadow);
@@ -351,15 +415,15 @@ h2{
     width: 30%;
     min-width: 10rem;
     text-decoration: none;
-    color: #fff;
+    color: var(--font-color);
     font-weight: 600;
-    background-color: #C32F86;
+    background-color: var(--btn-color);
     border-radius: 15px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color:var(--purple-color);
+    background-color:var(--pink-color);
 }
 
 .filters {
@@ -370,21 +434,21 @@ h2{
     display: inline-block;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    color: #fff;
+    color: var(--font-color);
     font-weight: 600;
-    background-color: #C32F86;
+    background-color: var(--btn-color);
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.098);
+    box-shadow: 1px 1px 5px 1px var(--black-shadow);
     border: none;
 }
 
-.filter-button:hover{
-    background-color: var(--purple-color);
+.filter-button.active{
+    background-color: var(--bg-page);
 }
 
-.filter-button.active {
-    background-color: var(--sua-cor-aqui); /* Adicione a sua cor aqui */
+.filter-button:hover{
+    background-color: var(--pink-color);
 }
 
 .filter-indicator {
@@ -395,11 +459,14 @@ h2{
 .filter-indicator-container {
     display: inline-block;
     margin-right: 10px;
-  }
+}
   
-
-
 @media (max-width: 576px) {
+    #switch{
+        position: absolute;
+        left: 42%;
+        top: 35%;
+    }
     .hard-skill{
         width: 6rem;
         height: 6rem;
@@ -428,5 +495,26 @@ h2{
     .soft-skill{
         flex-wrap: wrap;
         text-align: center;
+    }
+
+    .descricao{
+        margin-top: 2rem;
+    }
+    
+    .btn-contato{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #switch{
+        position: absolute;
+        left: 42%;
+        top: 35%;
     }
 }

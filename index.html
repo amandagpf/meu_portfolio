@@ -1,315 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-logo" href="#"><img src="./assets/logo_dark.png" alt=""></a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-logo" href="#">
+      <img src="./assets/logo_dark.png" alt="Logo de Amanda Desenvolvedora FullStack" class="dark-img">
+      <img src="./assets/logo-light.png" alt="Logo de Amanda Desenvolvedora FullStack" class="light-img" style="display:none;">
+    </a>
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="toggler-icon"><ion-icon name="menu-outline"></ion-icon></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon"><ion-icon name="menu-outline"></ion-icon></span>
+    </button>
 
-      <div class="collapse navbar-collapse navbar-itens" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quem sou</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Currículo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
-          </li>
-        </ul>
-      </div>
-    
-    </div>
-  </nav>
-  <section class="home-page">
-
-    <div class="descricao">
-      <img src="./assets/codificando_solucoes.png" alt="...">
-      <h1 class="nome-apresentacao">Amanda Fernandes, <br> Desenvolvedora FullStack.</h1>
-    </div>
-   
-    <div class="d-grid gap-3 d-md-flex btn-contato">
-      <button class="btn" type="button"><img src="./assets/logo-linkedin.png" alt=""></button>
-      <button class="btn" type="button"><img src="./assets/logo-github.png" alt=""></button>
-      <button class="btn" type="button"><img src="./assets/logo-behance.png" alt=""></button>
-    </div>
-  </section>
-
-  <section class="quem-sou">
-
-    <div class="enfeite"><img src="./assets/enfeite.png" alt=""></div>
-    
-    <div class="quem-sou-descricao">
-      <img src="./assets/foto-perfil.png" alt="">
-      <p><span>Olá, mundo!<br></span>Sou a Amanda, uma mulher apaixonada por tecnologia e entusiasta de UX e UI Design. Acredito que através da tecnologia podemos tornar o mundo um lugar melhor!
-        Um dos meus sonhos é poder fazer a diferença para a sociedade através do meu trabalho e utilizo como inspiração todas as mulheres da área de TI que me representam!</p>
+    <div class="collapse navbar-collapse navbar-itens" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quem sou</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Currículo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projetos</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="enfeite"><img src="./assets/enfeite.png" alt=""></div>
+  </div>
+     
+  <div id="switch" onclick="toggleMode()">
+    <button class="btn-switch">
+      <ion-icon name="sunny-outline" class="dark-img"></ion-icon>
+      <ion-icon name="moon-outline" style="display: none;" class="light-img"></ion-icon>
+    </button>
+    <span></span>
+  </div>
 
-    <div class="frase-efeito">
-      <p><span>" </span>Nunca estou realmente satisfeita quanto a entender alguma coisa, porque, até onde entendo, 
-        a minha compreensão só pode ser uma fração infinitesimal de tudo o que eu quero compreender.<span> "</span><br></p>
-        <span class="autora"><br>- Ada Lovelace.</span>
-    </div>
-  </section>
+</nav>
 
-  <section class="curriculo">
+<section class="home-page">
 
-    <h2>Formação Acadêmica</h2>
-
-    <div class="cards">
-      <div class="card">
-        <div class="row">
-          <div class="col-4 imagem">
-            <img src="./assets/computador-figura.png" alt="">
-          </div>
-          <div class="col-8">
-            <p class="title">Técnico em Informática para Internet: Desenvolvimento de Software</p>
-            <p>2023 - Em andamento. <br>
-              Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="row">
-          <div class="col-5 imagem">
-            <img src="./assets/quimica-figura.png" alt="">
-          </div>
-          <div class="col-6">
-            <p class="title">Técnico em Química</p>
-            <p>2017 - 2020. <br>
-              Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h2>Formação Complementar</h2>
-
-    <div class="cards-invisiveis">
-      <div class="formacao-complementar">
-        <div class="imagem"><img src="./assets/computador-figura-pequeno.png" alt=""></div>
-        <div class="informacoes">
-          <p class="title">Desenvolvedora Backend</p>
-          <p>2023 - Em andamento. <br>
-            Estudo backend de forma autodidata.</p>
-        </div>
-      </div>
+  <div class="descricao">
+    <img src="./assets/codificando_solucoes.png" alt="...">
+    <h1 class="nome-apresentacao">Amanda Fernandes, <br> Desenvolvedora FullStack.</h1>
+  </div>
   
-      <div class="formacao-complementar">
-        <div class="imagem"><img src="./assets/design.png" alt=""></div>
-        <div class="informacoes">
-          <p class="title">UX/UI Designer</p>
-          <p>2023 - Em andamento. <br>
-            Programa Geração Caldeira através do Instituto Caldeira..</p>
-        </div>
-      </div>
+  <div class="gap-3 d-md-flex btn-contato">
+    <button class="btn" type="button">
+      <img src="./assets/logo-linkedin.png" alt="Logo rede social Linkedin" class="dark-img">
+      <img src="./assets/logo-linkedin-light.png" alt="" class="light-img" style="display:none;">
+    </button>
+
+    <button class="btn" type="button">
+      <img src="./assets/logo-github.png" alt="Logo rede social GitHub" class="dark-img">
+      <img src="./assets/logo-github-light.png" alt="" class="light-img" style="display:none;">
+    </button>
+
+    <button class="btn" type="button">
+      <img src="./assets/logo-behance.png" alt="Logo rede social Behance" class="dark-img">
+      <img src="./assets/logo-behance-light.png" alt="" class="light-img" style="display:none;">
+    </button>
+  </div>
+</section>
+
+<section class="quem-sou">
+
+  <div class="enfeite">
+    <img src="./assets/enfeite.png" alt="Curva rosa para decorar página" class="dark-img">
+    <img src="./assets/enfeite-light.png" alt="Curva rosa para decorar página" class="light-img" style="display:none;">
+  </div>
   
-      <div class="formacao-complementar">
-        <div class="imagem"><img src="./assets/cloud.png" alt=""></div>
-        <div class="informacoes">
-          <p class="title">AWS Solutions Architect</p>
+  <div class="quem-sou-descricao">
+    <img src="./assets/foto-perfil.png" alt="Foto de perfil de Amanda" class="dark-img">
+    <img src="./assets/foto-perfil light.png" alt="Foto de perfil de Amanda" class="light-img" style="display:none;">
+    <p><span>Olá, mundo!<br></span>Sou a Amanda, uma mulher apaixonada por tecnologia e entusiasta de UX e UI Design. Acredito que através da tecnologia podemos tornar o mundo um lugar melhor!
+      Um dos meus sonhos é poder fazer a diferença para a sociedade através do meu trabalho e utilizo como inspiração todas as mulheres da área de TI que me representam!</p>
+  </div>
+
+  <div class="enfeite">
+    <img src="./assets/enfeite.png" alt="Curva rosa para decorar página" class="dark-img">
+    <img src="./assets/enfeite-light.png" alt="Curva rosa para decorar página" class="light-img" style="display:none;">
+  </div>
+
+  <div class="frase-efeito">
+    <p><span>" </span>Nunca estou realmente satisfeita quanto a entender alguma coisa, porque, até onde entendo, 
+      a minha compreensão só pode ser uma fração infinitesimal de tudo o que eu quero compreender.<span> "</span><br></p>
+      <span class="autora"><br>- Ada Lovelace.</span>
+  </div>
+
+</section>
+
+<section class="curriculo">
+
+  <h2>Formação Acadêmica</h2>
+
+  <div class="cards">
+    <div class="card">
+      <div class="row">
+        <div class="col-4 imagem">
+          <img src="./assets/computador-figura.png" alt="Desenho de computador" class="img-formacao">
+        </div>
+        <div class="col-8 text">
+          <p class="title">Técnico em Informática para Internet: Desenvolvimento de Software</p>
           <p>2023 - Em andamento. <br>
-            Ciclo de treinamendo AWS através do Instituto Caldeira.</p>
+            Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
         </div>
       </div>
     </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-4 imagem">
+          <img src="./assets/quimica-figura.png" alt="Desenho de Erlenmayer e Copo de Bécker" class="img-formacao">
+        </div>
+        <div class="col-8 text">
+          <p class="title">Técnico em Química</p>
+          <p>2017 - 2020. <br>
+            Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Formação Complementar</h2>
+
+  <div class="cards-invisiveis">
+    <div class="formacao-complementar">
+      <div class="imagem"><img src="./assets/computador-figura-pequeno.png" alt="Desenho de computador"></div>
+      <div class="informacoes">
+        <p class="title">Desenvolvedora Backend</p>
+        <p>2023 - Em andamento. <br>
+          Estudo backend de forma autodidata.</p>
+      </div>
+    </div>
+
+    <div class="formacao-complementar">
+      <div class="imagem"><img src="./assets/design.png" alt="Desenho de paleta de tintas e pincel"></div>
+      <div class="informacoes">
+        <p class="title">UX/UI Designer</p>
+        <p>2023 - Em andamento. <br>
+          Programa Geração Caldeira através do Instituto Caldeira..</p>
+      </div>
+    </div>
+
+    <div class="formacao-complementar">
+      <div class="imagem"><img src="./assets/cloud.png" alt="Desenho de nuvem, representando cloud computing."></div>
+      <div class="informacoes">
+        <p class="title">AWS Solutions Architect</p>
+        <p>2023 - Em andamento. <br>
+          Ciclo de treinamendo AWS através do Instituto Caldeira.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <h2>Minhas Hard Skills</h2>
+
+  <div class="hard-skills">
+
+    <div class="hard-skill">
+      <img src="./assets/java.png" alt="Logo da linguagem Java">
+      <p>Java</p>
+    </div>
+
+    <div class="hard-skill">
+      <img src="./assets/javascript.png" alt="Logo da linguagem JavaScript">
+      <p>JavaScript</p>
+    </div>
     
+    <div class="hard-skill">
+      <img src="./assets/html.png" alt="Representação de HTML">
+      <p>HTML</p>
+    </div>
 
-    <h2>Minhas Hard Skills</h2>
 
-    <div class="hard-skills">
+    <div class="hard-skill">
+      <img src="./assets/documento-css.png" alt="Representação de CSS">
+      <p>CSS</p>
+    </div>
 
-      <div class="hard-skill">
-        <img src="./assets/java.png" alt="">
-        <p>Java</p>
+    <div class="hard-skill">
+      <img src="./assets/interface-do-usuario.png" alt="Representação de UX/UI Design">
+      <p>UX/UI Design</p>
+    </div>
+
+  </div>
+
+
+  <h2>Meus Diferenciais e Soft Skills</h2>
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        
+        <div class="row soft-skills">
+          <div class="col minha-soft-skill">
+            <div class="soft-skill">
+              <img src="./assets/abra-o-livro.png" alt="Desenho de livro roxo">
+              <div class="soft-descricao">
+                <p class="title">Aprendizado Autodidata</p>
+                <p>Sou uma pessoa autodidata, apaixonada pelo conhecimento, estou sempre em busca de aprofundamento e novos aprendizados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="hard-skill">
-        <img src="./assets/javascript.png" alt="">
-        <p>JavaScript</p>
+      <div class="carousel-item" data-bs-interval="2000">
+        
+        <div class="row soft-skills">
+          <div class="col minha-soft-skill">
+            <div class="soft-skill">
+              <img src="./assets/analise.png" alt="Desenho de Lupa e papéis de fundo">
+              <div class="soft-descricao">
+                <p class="title">Atenção aos Detalhes</p>
+                <p>Gosto de pensar que em um projeto, os detalhes são extremamente importantes! Eu sou uma pessoa que está sempre atenta em cada detalhe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       
-      <div class="hard-skill">
-        <img src="./assets/html.png" alt="">
-        <p>HTML</p>
-      </div>
-
-
-      <div class="hard-skill">
-        <img src="./assets/documento-css.png" alt="">
-        <p>CSS</p>
-      </div>
-
-      <div class="hard-skill">
-        <img src="./assets/interface-do-usuario.png" alt="">
-        <p>UX/UI Design</p>
-      </div>
-
-    </div>
- 
-
-    <h2>Meus Diferenciais e Soft Skills</h2>
-
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-             
-              <div class="row soft-skills">
-                <div class="col minha-soft-skill">
-                  <div class="soft-skill">
-                    <img src="./assets/abra-o-livro.png" alt="">
-                    <div class="soft-descricao">
-                      <p class="title">Aprendizado Autodidata</p>
-                      <p>Sou uma pessoa autodidata, apaixonada pelo conhecimento, estou sempre em busca de aprofundamento e novos aprendizados.</p>
-                    </div>
-                  </div>
-                </div>
+      <div class="carousel-item">
+        
+        <div class="row soft-skills">
+          <div class="col minha-soft-skill">
+            <div class="soft-skill">
+              <img src="./assets/lampada-de-ideia .png" alt="Desenho de lâmpada">
+              <div class="soft-descricao">
+                <p class="title">Resolução de Problemas</p>
+                <p>Sou uma pessoa que analisa os problemas de diferentes ângulos e é capaz de encontrar soluções criativas e inovadoras.</p>
               </div>
-
             </div>
-
-            <div class="carousel-item" data-bs-interval="2000">
-              
-              <div class="row soft-skills">
-                <div class="col minha-soft-skill">
-                  <div class="soft-skill">
-                    <img src="./assets/analise.png" alt="">
-                    <div class="soft-descricao">
-                      <p class="title">Atenção aos Detalhes</p>
-                      <p>Gosto de pensar que em um projeto, os detalhes são extremamente importantes! Eu sou uma pessoa que está sempre atenta em cada detalhe.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            
-            <div class="carousel-item">
-              
-              <div class="row soft-skills">
-                <div class="col minha-soft-skill">
-                  <div class="soft-skill">
-                    <img src="./assets/lampada-de-ideia .png" alt="">
-                    <div class="soft-descricao">
-                      <p class="title">Resolução de Problemas</p>
-                      <p>Sou uma pessoa que analisa os problemas de diferentes ângulos e é capaz de encontrar soluções criativas e inovadoras.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="carousel-item">
-              
-              <div class="row soft-skills">
-                <div class="col minha-soft-skill">
-                  <div class="soft-skill">
-                    <img src="./assets/foguete.png" alt="">
-                    <div class="soft-descricao">
-                      <p class="title">Empreendedorismo</p>
-                      <p>Possuo mentalidade empreendedora e proativa, busco colocar o usuário como prioridade em cada desenvolvimento.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <img src="./assets/previous.png" alt="">
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <img src="./assets/next.png" alt="">
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
 
       </div>
-    </div>
 
-  </section>
+      <div class="carousel-item">
+        
+        <div class="row soft-skills">
+          <div class="col minha-soft-skill">
+            <div class="soft-skill">
+              <img src="./assets/foguete.png" alt="Desenho de foguete">
+              <div class="soft-descricao">
+                <p class="title">Empreendedorismo</p>
+                <p>Possuo mentalidade empreendedora e proativa, busco colocar o usuário como prioridade em cada desenvolvimento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <section class="meus-projetos">
-
-    <h2>Meus Projetos</h2>
-
-    <div class="filters frontend">
-      <div class="filter-indicator-container">
-        <p class="filter-indicator">Filtros:</p>
       </div>
-      <button id="destaques-button" class="filter-button" data-filter="todos">Destaques</button>
-      <button class="filter-button" data-filter="frontend">Frontend</button>
-      <button class="filter-button" data-filter="backend">Backend</button>
-      <button class="filter-button" data-filter="uxui">UX/UI Design</button>
-      <button class="filter-button" data-filter="todos">Todos</button>
+    
     </div>
-
-    <div class="project frontend ativo">
-      <h5>Decodificador de Textos - Design e Front-end</h5>
-      <img src="./assets/decodificador.png" alt="Projeto decodificador de textos">
-      <p>Projeto desenvolvido utilizando Figma, HTML, CSS e JavaScript para participar de um desafio do programa Alura ONE.</p>
-      <a href="deploy_projeto1.html" target="_blank" class="button">Acessar Deploy</a>
-      <a href="repositorio_projeto1.html" target="_blank" class="button">Acessar Repositório</a>
-    </div>
-  
-    <div class="project frontend ativo">
-      <h5>Níkel - Carteira Digital - Front-end</h5>
-      <img src="./assets/nikel.png" alt="Projeto carteira digital.">
-      <p>Projeto desenvolvido para ser uma carteira digital, com transações de entrada, saída e histórico. Além disso, há um login local no programa.</p>
-      <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
-      <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
-    </div>
-
-    <div class="project frontend">
-      <h5>Cartão Digital - Design e Front-end</h5>
-      <img src="./assets/cartao-digital.png" alt="Cartão de 'visitas' digital.">
-      <p>Projeto desenvolvido utilizando Figma, HTML, CSS e JavaScript para participar de um desafio do programa Alura ONE.</p>
-      <a href="deploy_projeto1.html" target="_blank" class="button">Ver Deploy</a>
-      <a href="repositorio_projeto1.html" target="_blank" class="button">Ver Repositório</a>
-    </div>
-  
-    <div class="project frontend">
-      <h5>Supermarket List - Front-end</h5>
-      <img src="./assets/supermarket.png" alt="Lista de supermercado.">
-      <p>Lista de supermercado digital. Na lista o usuário inclui nome do produto e preço, o programa calcula o total e dá opção de limpar o carrinho.</p>
-      <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
-      <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
-    </div>
-
-    <div class="project uxui">
-      <h5>Supermarket List - Front-end</h5>
-      <img src="./assets/supermarket.png" alt="Lista de supermercado.">
-      <p>Lista de supermercado digital. Na lista o usuário inclui nome do produto e preço, o programa calcula o total e dá opção de limpar o carrinho.</p>
-      <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
-      <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <img src="./assets/previous.png" alt="Setas para o lado esquerdo">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <img src="./assets/next.png" alt="Setas para o lado direito">
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
-  </section>
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</section>
+
+<section class="meus-projetos">
+
+  <h2>Meus Projetos</h2>
+
+  <div class="filters frontend">
+    <div class="filter-indicator-container">
+      <p class="filter-indicator">Filtros:</p>
+    </div>
+    <button id="destaques-button" class="filter-button" data-filter="todos">Destaques</button>
+    <button class="filter-button" data-filter="frontend">Frontend</button>
+    <button class="filter-button" data-filter="backend">Backend</button>
+    <button class="filter-button" data-filter="uxui">UX/UI Design</button>
+    <button class="filter-button" data-filter="todos">Todos</button>
+  </div>
+
+  <div class="project frontend ativo">
+    <h5>Decodificador de Textos - Design e Front-end</h5>
+    <img src="./assets/decodificador.png" alt="Projeto decodificador de textos">
+    <p>Projeto desenvolvido utilizando Figma, HTML, CSS e JavaScript para participar de um desafio do programa Alura ONE.</p>
+    <a href="deploy_projeto1.html" target="_blank" class="button">Acessar Deploy</a>
+    <a href="repositorio_projeto1.html" target="_blank" class="button">Acessar Repositório</a>
+  </div>
+
+  <div class="project frontend ativo">
+    <h5>Níkel - Carteira Digital - Front-end</h5>
+    <img src="./assets/nikel.png" alt="Projeto carteira digital.">
+    <p>Projeto desenvolvido para ser uma carteira digital, com transações de entrada, saída e histórico. Além disso, há um login local no programa.</p>
+    <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
+    <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
+  </div>
+
+  <div class="project frontend">
+    <h5>Cartão Digital - Design e Front-end</h5>
+    <img src="./assets/cartao-digital.png" alt="Cartão de 'visitas' digital.">
+    <p>Projeto desenvolvido utilizando Figma, HTML, CSS e JavaScript para participar de um desafio do programa Alura ONE.</p>
+    <a href="deploy_projeto1.html" target="_blank" class="button">Ver Deploy</a>
+    <a href="repositorio_projeto1.html" target="_blank" class="button">Ver Repositório</a>
+  </div>
+
+  <div class="project frontend">
+    <h5>Supermarket List - Front-end</h5>
+    <img src="./assets/supermarket.png" alt="Lista de supermercado.">
+    <p>Lista de supermercado digital. Na lista o usuário inclui nome do produto e preço, o programa calcula o total e dá opção de limpar o carrinho.</p>
+    <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
+    <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
+  </div>
+
+  <div class="project uxui">
+    <h5>Supermarket List - Front-end</h5>
+    <img src="./assets/supermarket.png" alt="Lista de supermercado.">
+    <p>Lista de supermercado digital. Na lista o usuário inclui nome do produto e preço, o programa calcula o total e dá opção de limpar o carrinho.</p>
+    <a href="deploy_projeto2.html" target="_blank" class="button">Ver Deploy</a>
+    <a href="repositorio_projeto2.html" target="_blank" class="button">Ver Repositório</a>
+  </div>
+
+
+</section>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
