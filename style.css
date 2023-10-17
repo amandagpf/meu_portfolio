@@ -97,6 +97,10 @@ body{
     box-shadow: 1.5px 1.5px 10px 1.5px var(--switch-span-shadow) inset;
 }
 
+#switch.active{
+    display: none;
+}
+
 .toggler-icon {
     color: var(--font-color);
     font-size: 30px;
@@ -113,6 +117,12 @@ body{
 .navbar-itens .nav-link{
     color: var(--font-color);
     font-size: 18px;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.navbar-itens .nav-link:hover{
+    color: var(--pink-color);
+    font-size: 20px;
 }
 
 .home-page, .curriculo, .meus-projetos{
@@ -162,6 +172,12 @@ body{
     height: 3.5rem;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.5s;
+}
+
+.btn-contato .btn:hover{
+    background-color: var(--pink-color);
+    box-shadow: 1px 1px 2px var(--details);
 }
 
 .btn-contato .btn img{
@@ -381,6 +397,10 @@ h2{
     width: 6rem;
 }
 
+.meus-projetos{
+    margin-bottom: 3rem;
+}
+
 .project {
     max-width: 60rem;
     margin: 0 8% 6%;
@@ -389,6 +409,12 @@ h2{
     border-radius: 30px;
     text-align: center;
     box-shadow: 1px 1px 10px 1px var(--colorful-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
 }
 
 .project img {
@@ -402,10 +428,6 @@ h2{
 
 .project p {
     margin: 0 5% 2.5%;
-}
-
-.project {
-    display: none;
 }
 
 .button {
@@ -459,6 +481,92 @@ h2{
 .filter-indicator-container {
     display: inline-block;
     margin-right: 10px;
+}
+
+footer{
+    background-color: var(--bg-navbar);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.fale-comigo-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.fale-comigo-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    color: var(--bg-navbar); 
+    padding: 1rem;
+}
+
+.fale-comigo{
+    margin-bottom: 1rem;
+}
+
+.fale-comigo h2{
+    width: 41rem;
+    margin: 0 0 1rem 0;
+}
+
+.name, .email, .numero, .assunto, .enviar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name, .numero{
+    width: 35%;
+}
+
+.email, .assunto{
+    width: 55%;
+}
+
+#nome, #telefone, #email, #assunto{
+    height: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--pink-color);
+}
+
+.mensagem{
+    width: 93%;
+}
+
+#mensagem{
+    max-height: 8rem;
+    width: 100%;   
+    border-radius: 30px;
+    border: 1px solid var(--pink-color);
+}
+
+#enviar{
+    margin: 1.5rem;
+    color: var(--font-color);
+    width: 50%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 15px;
+    background: var(--btn-color);
+    box-shadow:1px 1px 5px 1px var(--navbar-shadow);
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+
+#enviar:hover {
+    background-color: var(--pink-color);
 }
   
 @media (max-width: 576px) {
@@ -518,3 +626,32 @@ h2{
         top: 35%;
     }
 }
+
+@media (min-width: 992px) {
+
+    .filters{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .meus-projetos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        max-width: 35%;
+        min-height: 28rem;
+        margin: 1rem;
+        padding-top: 3rem;
+    }
+
+    .button {
+        min-width: 11rem;
+    }
+    
+}
+
