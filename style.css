@@ -485,9 +485,10 @@ h2{
 
 footer{
     background-color: var(--bg-navbar);
-    padding-top: 2rem;
+  
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .fale-comigo-form{
@@ -496,6 +497,8 @@ footer{
     justify-content: center;
     align-items: center;
     width: 50%;
+    min-width: 18rem;
+    background-color: #C32F86;
 }
 
 .fale-comigo-form form{
@@ -517,8 +520,12 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 }
 
 .fale-comigo h2{
-    width: 41rem;
-    margin: 0 0 1rem 0;
+    width: 100%;
+    min-width: 18rem;
+    font-size: 24px;
+    color: var(--pink-color);
+    text-align: start;
+    margin: 3rem 0 0;
 }
 
 .name, .email, .numero, .assunto, .enviar{
@@ -589,11 +596,11 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
     }
 
     .carousel-control-prev {
-        margin-left: -1%;
+        margin-left: 5%;
     }
     
     .carousel-control-next{
-        margin-right: -1%;
+        margin-right: 5%;
     }
 
     .soft-descricao{
@@ -615,6 +622,63 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
         position: absolute;
         right: 2rem;
         bottom: 2rem;
+    }
+    
+    .carousel-control-prev img, .carousel-control-next img{
+        width: 4rem;
+    }
+    
+    .minha-soft-skill{
+       max-width: 14rem;
+
+    }
+
+    .soft-skill{
+        border-radius: 30px;
+        min-width: 14rem;
+        padding: 0.5rem;
+    }
+    
+    .soft-descricao{
+        width: 12rem;
+    }
+    
+    .soft-skill img{
+        width: 4rem;
+    }
+
+    .filters {
+        margin-bottom: 20px;
+        width: 80%;
+    } 
+
+    .fale-comigo-form{
+        justify-content: start;
+        left: 0;
+        background-color: #C32F86;
+    }
+
+    .project {
+        max-width: 18rem;
+        margin: 0 0 6%;
+    }
+
+
+
+
+
+    .cards{
+        margin: 0;
+    }
+    
+    .card{
+        padding: 0.5rem;
+        max-width: 35%;
+        min-width: 18.5rem;
+    }
+     
+    .card .text{
+        font-size: 14px;
     }
 
 }
