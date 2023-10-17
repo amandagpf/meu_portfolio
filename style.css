@@ -485,9 +485,10 @@ h2{
 
 footer{
     background-color: var(--bg-navbar);
-  
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -498,7 +499,6 @@ footer{
     align-items: center;
     width: 50%;
     min-width: 18rem;
-    background-color: #C32F86;
 }
 
 .fale-comigo-form form{
@@ -517,15 +517,11 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 
 .fale-comigo{
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .fale-comigo h2{
-    width: 100%;
-    min-width: 18rem;
-    font-size: 24px;
-    color: var(--pink-color);
-    text-align: start;
-    margin: 3rem 0 0;
+    margin: 3rem 0 1rem;
 }
 
 .name, .email, .numero, .assunto, .enviar{
@@ -654,8 +650,6 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 
     .fale-comigo-form{
         justify-content: start;
-        left: 0;
-        background-color: #C32F86;
     }
 
     .project {
