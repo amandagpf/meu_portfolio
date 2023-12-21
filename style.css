@@ -137,7 +137,7 @@ body{
 }
 
 .descricao{
-    margin-top: 6.5rem;
+    margin-top: 5.5rem;
     color: var(--pink-color);
     flex-wrap: wrap-reverse;
 }
@@ -146,17 +146,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 1%;
 }
 
 .descricao img{
-    max-width: 50%;
+    max-width: 40%;
     margin-left: 8%;
     min-width: 20rem;
 }
 
 .descricao h1{
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .btn-contato{
@@ -245,7 +245,7 @@ h2{
 }
 
 .cards{
-    width: 100%;
+    width: 92%;
     margin: 0 30% 0;
     gap: 1rem;
     display: flex;
@@ -262,8 +262,8 @@ h2{
     border-radius: 30px;
     box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     max-width: 35%;
-    min-width: 22rem;
-    min-height: 13.5rem;
+    min-width: 26rem;
+    min-height: 15rem;
 }
 
 .card .imagem{
@@ -323,13 +323,14 @@ h2{
 .hard-skill{
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
+    border-radius: 90px;
+    background-color: var(--bg-navbar);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 5px 5px 10px 5px var(--inset-shadow) inset;
+    box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     padding-top: 1rem;
 }
 
@@ -339,6 +340,11 @@ h2{
 
 .hard-skill img{
     width: 4rem;
+    margin-bottom: 0.2rem;
+}
+
+.hard-skill .figma{
+    width: 2.5rem;
 }
 
 .carousel{
@@ -374,7 +380,7 @@ h2{
 
 .soft-skill{
     width: 40%;
-    min-width: 16rem;
+    min-width: 17rem;
 }
 
 .soft-skill{
@@ -610,6 +616,10 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 
     .descricao{
         margin-top: 2rem;
+    }
+
+    .descricao h1{
+        font-size: 26px;
     }
     
     .btn-contato{
