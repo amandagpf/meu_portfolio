@@ -265,7 +265,13 @@ h2{
     box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     max-width: 35%;
     min-width: 26rem;
-    min-height: 15rem;
+    min-height: 12rem;
+}
+
+.card .row{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .card .imagem{
@@ -275,6 +281,8 @@ h2{
 }
 
 .card .text{
+    width: 60%;
+    min-width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,7 +296,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     width: 75%;
-    justify-content: start;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -325,14 +333,14 @@ h2{
 .hard-skill{
     width: 10rem;
     height: 10rem;
-    border-radius: 90px;
+    border-radius: 20px;
     background-color: var(--bg-navbar);
+    box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 1px 1px 5px 1px var(--colorful-shadow);
     padding-top: 1rem;
 }
 
@@ -456,6 +464,7 @@ h2{
 .button.manutencao {
     background-color: #545151;
     cursor: default;
+    color: #F0E3FF;
 }
 
 .button:hover {
@@ -685,10 +694,6 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
         max-width: 18rem;
         margin: 0 0 6%;
     }
-
-
-
-
 
     .cards{
         margin: 0;
