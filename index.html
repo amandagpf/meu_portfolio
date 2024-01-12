@@ -130,7 +130,9 @@
       </div>
     </div>
 
-    <div class="card">
+    
+    <!-- Eu pausei a matrícula.
+      <div class="card">
       <div class="row">
         <div class="col-4 imagem">
           <img src="./assets/computador-figura.png" alt="Desenho de computador" class="img-formacao">
@@ -141,7 +143,7 @@
             Fundação Escola Técnica Liberato Salzano Vieira da Cunha.</p>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="card">
       <div class="row">
@@ -232,15 +234,17 @@
 
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
+      <div class="carousel-item active" data-bs-interval="20000">
         
         <div class="row soft-skills">
           <div class="col minha-soft-skill">
             <div class="soft-skill">
-              <img src="./assets/abra-o-livro.png" alt="Desenho de livro roxo">
+              <img src="./assets/medal.png" alt="Desenho prêmio">
               <div class="soft-descricao">
-                <p class="title">Aprendizado Autodidata</p>
-                <p>Sou uma pessoa autodidata, apaixonada pelo conhecimento, estou sempre em busca de aprofundamento e novos aprendizados.</p>
+                <p class="title">Destaque Técnico</p>
+                <p>Fui reconhecida como aluna de destaque técnico na turma de UX/UI Design
+                  durante as aulas do Geração Caldeira em 2023.
+                </p>
               </div>
             </div>
           </div>
@@ -257,6 +261,22 @@
               <div class="soft-descricao">
                 <p class="title">Atenção aos Detalhes</p>
                 <p>Gosto de pensar que em um projeto, os detalhes são extremamente importantes! Eu sou uma pessoa que está sempre atenta em cada detalhe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel-item">
+        
+        <div class="row soft-skills">
+          <div class="col minha-soft-skill">
+            <div class="soft-skill">
+              <img src="./assets/abra-o-livro.png" alt="Desenho de livro roxo">
+              <div class="soft-descricao">
+                <p class="title">Aprendizado Autodidata</p>
+                <p>Sou uma pessoa autodidata, apaixonada pelo conhecimento, estou sempre em busca de aprofundamento e novos aprendizados.</p>
               </div>
             </div>
           </div>
@@ -319,71 +339,108 @@
         <p class="filter-indicator">Filtros:</p>
       </div>
       <button id="destaques-button" class="filter-button" data-filter="todos">Destaques</button>
+      <button class="filter-button" data-filter="uxui">UX/UI Design</button>
       <button class="filter-button" data-filter="frontend">Frontend</button>
       <button class="filter-button" data-filter="backend">Backend</button>
-      <button class="filter-button" data-filter="uxui">UX/UI Design</button>
       <button class="filter-button" data-filter="todos">Todos</button>
+    </div>
+
+    <div class="project uxui ativo">
+      <h5>Buddy Champ - UX/UI Design</h5>
+      <img src="./assets/budychamp.png" alt="Projeto buddy champ">
+      <p>Projeto desenvolvido durante as aulas de UX/UI Design da Geração Caldeira. 
+        A proposta envolvia criar duas novas funcionalidades para o aplicativo fictício que já existia, seguindo os padrões 
+        exigidos pela Apple, utilizando o HIG (Human Interface Guidelines).</p>
+      <a href="https://www.figma.com/proto/Ct7PrG7IBmMCvzw1koIEyj/Buddy-Champ?page-id=5%3A6050&type=design&node-id=282-10516&viewport=689%2C531%2C0.07&t=2igbNm9au5szE5CD-1&scaling=scale-down&starting-point-node-id=282%3A10516&mode=design" target="_blank" class="button">Abrir protótipo</a>
+      <a href="https://www.behance.net/gallery/187133125/Buddy-Champ-Desafio-de-Aprendizagem" target="_blank" class="button">Abrir portfólio</a>
+    </div>
+
+    <div class="project uxui ativo">
+      <h5>SiEduca - UX/UI Design - Hackaton: 1° Lugar</h5>
+      <img src="./assets/sieduca.png" alt="Projeto buddy champ">
+      <p>Solução para o desafio de tornar serviços financeiros acessíveis a pessoas que não têm acesso,
+         proposto no primeiro hackathon do Instituto Caldeira.
+         A equipe conquistou o primeiro lugar no desafio durante o evento. 
+      </p>
+      <a href="" target="_blank" class="button manutencao">Em manutenção</a>
+      <!--
+      <a href="" target="_blank" class="button">Abrir protótipo</a>
+      <a href="" target="_blank" class="button">Abrir portfólio</a>
+      -->
+    </div>
+
+    <div class="project uxui ativo">
+      <h5>Fintous - UX/UI Design</h5>
+      <img src="./assets/findtous.png" alt="Projeto buddy champ">
+      <p>Aplicação está sendo desenvolvida para entregar educação financeira
+        de forma acessível para todas as faixas etárias.
+      </p>
+      <a href="" target="_blank" class="button manutencao">Em manutenção</a>
+      <!--
+      <a href="" target="_blank" class="button">Abrir protótipo</a>
+      <a href="" target="_blank" class="button">Abrir portfólio</a>
+      -->
     </div>
 
     <div class="project frontend ativo">
       <h5>Decodificador de Textos - Design e Front-end</h5>
       <img src="./assets/decodificador.png" alt="Projeto decodificador de textos">
       <p>Projeto desenvolvido utilizando Figma, HTML, CSS e JavaScript para participar de um desafio do programa Alura ONE.</p>
-      <a href="https://amandagpf.github.io/decodificador-de-texto/" target="_blank" class="button">Acessar deploy</a>
-      <a href="https://github.com/amandagpf/decodificador-de-texto" target="_blank" class="button">Ver repositório</a>
+      <a href="https://amandagpf.github.io/decodificador-de-texto/" target="_blank" class="button">Abrir deploy</a>
+      <a href="https://github.com/amandagpf/decodificador-de-texto" target="_blank" class="button">Abrir repositório</a>
     </div>
 
     <div class="project frontend ativo">
       <h5>Níkel - Carteira Digital - Front-end</h5>
       <img src="./assets/nikel.png" alt="Projeto carteira digital.">
       <p>Projeto desenvolvido para ser uma carteira digital, com transações de entrada, saída e histórico. Além disso, há um login local no programa.</p>
-      <a href="https://amandagpf.github.io/projeto-nikel/" target="_blank" class="button">Acessar deploy</a>
-      <a href="https://github.com/amandagpf/projeto-nikel" target="_blank" class="button">Ver repositório</a>
+      <a href="https://amandagpf.github.io/projeto-nikel/" target="_blank" class="button">Abrir deploy</a>
+      <a href="https://github.com/amandagpf/projeto-nikel" target="_blank" class="button">Abrir repositório</a>
     </div>
 
     <div class="project frontend">
       <h5>Cartão Digital - Design e Front-end</h5>
       <img src="./assets/cartao-digital.png" alt="Cartão de 'visitas' digital.">
       <p>Projeto desenvolvido utilizando Figma, HTML, CSS e JavaScript para participar de um desafio do programa Alura ONE.</p>
-      <a href="https://amandagpf.github.io/cartao-digital/" target="_blank" class="button">Acessar deploy</a>
-      <a href="https://github.com/amandagpf/cartao-digital" target="_blank" class="button">Ver repositório</a>
+      <a href="https://amandagpf.github.io/cartao-digital/" target="_blank" class="button">Abrir deploy</a>
+      <a href="https://github.com/amandagpf/cartao-digital" target="_blank" class="button">Abrir repositório</a>
     </div>
 
     <div class="project frontend">
       <h5>Supermarket List - Front-end</h5>
       <img src="./assets/supermarket.png" alt="Lista de supermercado.">
       <p>Lista de supermercado digital. Na lista o usuário inclui nome do produto e preço, o programa calcula o total e dá opção de limpar o carrinho.</p>
-      <a href="https://amandagpf.github.io/SupermarketList/" target="_blank" class="button">Acessar deploy</a>
-      <a href="https://github.com/amandagpf/SupermarketList" target="_blank" class="button">Ver repositório</a>
+      <a href="https://amandagpf.github.io/SupermarketList/" target="_blank" class="button">Abrir deploy</a>
+      <a href="https://github.com/amandagpf/SupermarketList" target="_blank" class="button">Abrir repositório</a>
     </div>
 
-    <div class="project uxui ativo">
+    <div class="project uxui">
       <h5>Conectando Apoio - UX/UI Design</h5>
       <img src="./assets/conectando_apoio.png" alt="Site para conectar pessoas que precisam de ajuda com quem pode ajudar.">
       <p>Site desenvolvido para conectar pessoas que precisam de ajuda com quem pode ajudar. Este projeto foi realizado em conjunto com duas colegas de UX/UI Design e colegas de Programação do Programa Nova Geração - Instituto Caldeira.</p>
-      <a href="https://www.figma.com/proto/AGY9on1ETFEURiIfMu32t4/Conectando-Apoio?page-id=0%3A1&type=design&node-id=1162-6963&viewport=451%2C186%2C0.05&t=ADPzp98iIs84O1yL-1&scaling=scale-down&starting-point-node-id=1162%3A6963&mode=design" target="_blank" class="button">Acessar protótipo</a>
-      <a href="https://www.behance.net/gallery/176354177/Conectando-Apoio" target="_blank" class="button">Acessar Portfólio</a>
+      <a href="https://www.figma.com/proto/AGY9on1ETFEURiIfMu32t4/Conectando-Apoio?page-id=0%3A1&type=design&node-id=1162-6963&viewport=451%2C186%2C0.05&t=ADPzp98iIs84O1yL-1&scaling=scale-down&starting-point-node-id=1162%3A6963&mode=design" target="_blank" class="button">Abrir protótipo</a>
+      <a href="https://www.behance.net/gallery/176354177/Conectando-Apoio" target="_blank" class="button">Abrir portfólio</a>
     </div>
 
     <div class="project backend ativo">
       <h5>CineFlix - Backend</h5>
       <img src="./assets/cineflix.png" alt="Imagem ilustrativa de pipoca e claquete.">
       <p>Programa realizado para estudos, onde simula-se uma plataforma de streaming de filmes.</p>
-      <a href="https://github.com/amandagpf/CineFlix_java" target="_blank" class="button">Ver repositório</a>
+      <a href="https://github.com/amandagpf/CineFlix_java" target="_blank" class="button">Abrir repositório</a>
     </div>
 
     <div class="project backend">
       <h5>PlayGroove - Backend</h5>
       <img src="./assets/playgroove.png" alt="Imagem ilustrativa de play e fones de ouvido.">
       <p>Programa realizado para estudos, onde simula-se uma plataforma de streaming de áudios.</p>
-      <a href="https://github.com/amandagpf/PlayGroove" target="_blank" class="button">Ver repositório</a>
+      <a href="https://github.com/amandagpf/PlayGroove" target="_blank" class="button">Abrir repositório</a>
     </div>
 
     <div class="project backend">
       <h5>Easy Bank - Backend</h5>
       <img src="./assets/easybank.png" alt="Imagem ilustrativa de moedas, bitcoins.">
       <p>Programa realizado para estudos, onde simula-se o funcionamento de um banco.</p>
-      <a href="https://github.com/amandagpf/easy-bank" target="_blank" class="button">Ver repositório</a>
+      <a href="https://github.com/amandagpf/easy-bank" target="_blank" class="button">Abrir repositório</a>
     </div>
 
   </section>
