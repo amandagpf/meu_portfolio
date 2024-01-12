@@ -106,7 +106,7 @@ class FormSubmit {
       this.form = document.querySelector(settings.form);
       this.formButton = document.getElementById(settings.buttonId);
       if (this.form) {
-        this.url = "https://formsubmit.co/amandapassos.fernandes@gmail.com";
+        this.url = "https://formsubmit.co/8f9289f8a0ea671a34381d0a111bac22";
       }
       this.sendForm = this.sendForm.bind(this);
     }
