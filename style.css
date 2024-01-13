@@ -2,7 +2,7 @@
     --bg-page: #272626;
     --bg-navbar: #181717;
     --font-color: #F0E3FF;
-    --pink-color: rgb(255, 107, 194);
+    --pink-color: #ff6bc2;
     --details: #F0E3FF;
     --colorful-shadow: #ff6bc13a;
     --btn-color: #C32F86;
@@ -127,7 +127,7 @@ body{
     font-size: 20px;
 }
 
-.home-page, .curriculo, .meus-projetos{
+.home-page, .curriculo, .meus-projetos, .processo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -598,6 +598,95 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 #enviar:hover {
     background-color: var(--pink-color);
 }
+
+.descricao-processo {
+    width: 76%;
+}
+
+.meu-processo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.etapas {
+    width: 76%;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 10px 1px var(--colorful-shadow);
+    background-color: var(--bg-navbar);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.etapas img{
+    width: 16rem;
+}
+
+.etapas .title{
+    font-size: 20px;
+    width: 88%;
+}
+
+.descricao-processos p{
+    width: 75%;
+}
+
+.imersao {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.4rem;
+    width: 88%;
+}
+
+.etapas .imersao .title {
+    font-size: 18px;
+}
+
+.ferramentas {
+    height: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-ferramenta {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-ferramenta p {
+    margin-top: 0.5rem;
+    font-size: 20px;
+}
+
+.ferramenta {
+    background-color: var(--btn-color);
+    border-radius: 90%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ferramenta img {
+    width: 90%;
+    max-width: 3.5rem;
+}
+
+.frase-final {
+    font-size: 20px;
+    color: var(--font-color);
+    text-align: center;
+}
   
 @media (max-width: 576px) {
 
@@ -709,6 +798,66 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
         font-size: 14px;
     }
 
+    .entrevista {
+        content: url('./assets/entrevista_menor.png');
+    }
+
+    .crazy {
+        content: url('./assets/crazy_menor.png');
+    }
+
+    .prototipo {
+        content: url('./assets/prototipo_menor.png');
+    }
+
+    .item-ferramenta p {
+        margin-top: 0.5rem;
+        font-size: 14px;
+    }
+    
+    .ferramentas {
+        padding-left: 2rem;
+    }
+
+    .ferramenta {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .ferramenta img {
+        width: 2.5rem;
+    }
+
+    .etapas .title{
+        font-size: 16px;
+    }
+    
+    .descricao-processos p{
+        width: 85%;
+        font-size: 14px;
+    }
+    
+    .imersao {
+        gap: 1rem;
+        flex-direction: column;
+        
+    }
+    
+    .etapas .imersao .title {
+        font-size: 14px;
+    }
+
+    .descricao-processos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frase-final {
+        font-size: 18px;
+        text-align: left;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -734,6 +883,73 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
     
     .carousel-control-next{
         margin-right: 10%;
+    }
+
+    .entrevista {
+        content: url('./assets/entrevista_menor.png');
+    }
+
+    .crazy {
+        content: url('./assets/crazy_menor.png');
+    }
+
+    .prototipo {
+        content: url('./assets/prototipo_menor.png');
+    }
+
+    .item-ferramenta p {
+        margin-top: 0.5rem;
+        font-size: 14px;
+    }
+    
+    .ferramentas {
+        padding-left: 2rem;
+    }
+
+    .ferramenta {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .ferramenta img {
+        width: 2.5rem;
+    }
+
+    .etapas .title{
+        font-size: 16px;
+    }
+    
+    .descricao-processos p{
+        width: 85%;
+        font-size: 14px;
+    }
+    
+    .imersao {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .descricao-processos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .etapas .imersao .title {
+        font-size: 14px;
+    }
+
+    .frase-final {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1389px) {
+
+    .ferramenta {
+        width: 4rem;
+        height: 4rem;
     }
 
 }
@@ -763,6 +979,5 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
     .button {
         min-width: 11rem;
     }
-    
 }
 
