@@ -477,6 +477,7 @@ h2{
 
 .filters {
     margin-bottom: 20px;
+    margin-left: 1rem;
 }
 
 .filter-button {
@@ -640,7 +641,7 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 1.4rem;
+    gap: 1.2rem;
     width: 88%;
 }
 
@@ -649,9 +650,11 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
 }
 
 .ferramentas {
-    height: 14rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    width: 110%;
+    max-width: 44rem;
 }
 
 .item-ferramenta {
@@ -660,10 +663,11 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
     width: 20rem;
     align-items: center;
     gap: 0.5rem;
+
 }
 
 .item-ferramenta p {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     font-size: 20px;
 }
 
@@ -700,6 +704,11 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
         left: 42%;
         top: 35%;
     }
+
+    .descricao h1 {
+        margin-left: 1rem;
+    }
+
     .hard-skill{
         width: 6rem;
         height: 6rem;
@@ -952,6 +961,13 @@ input[type="text"], input[type="email"], input[type="number"], textarea {
         height: 4rem;
     }
 
+    .item-ferramenta p {
+        font-size: 16px;
+    }
+
+    .item-ferramenta {
+        width: 14rem;
+    }
 }
 
 @media (min-width: 992px) {
